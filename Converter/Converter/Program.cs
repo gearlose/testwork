@@ -8,8 +8,8 @@ namespace Converter
 
         static void Main(string[] args)
         {
-            string JsonPath = "";
-            string CsvPath = ""; // if csv will be null , csvpath = jsonpath
+            string JsonPath = @"";
+            string CsvPath = @""; 
             string EncodingType = "";
             string Separator = "";
 
@@ -18,7 +18,6 @@ namespace Converter
             {
                 try
                 {
-                    Console.WriteLine(args[i]);
                     if (args[i] == "-i")
                         JsonPath = args[i + 1];
                     else if (args[i] == "-e")
