@@ -1,0 +1,17 @@
+E:\тестоое задание\Converter\Converter\bin\Debug\Converter.exe.config
+E:\тестоое задание\Converter\Converter\bin\Debug\Converter.exe
+E:\тестоое задание\Converter\Converter\bin\Debug\Converter.pdb
+E:\тестоое задание\Converter\Converter\bin\Debug\ChoETL.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\ChoETL.JSON.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\Newtonsoft.Json.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\System.CodeDom.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\System.ComponentModel.Annotations.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\System.Data.SqlClient.dll
+E:\тестоое задание\Converter\Converter\bin\Debug\Newtonsoft.Json.pdb
+E:\тестоое задание\Converter\Converter\bin\Debug\Newtonsoft.Json.xml
+E:\тестоое задание\Converter\Converter\obj\Debug\Converter.csproj.AssemblyReference.cache
+E:\тестоое задание\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+E:\тестоое задание\Converter\Converter\obj\Debug\Converter.csproj.CopyComplete
+E:\тестоое задание\Converter\Converter\obj\Debug\Converter.exe
+E:\тестоое задание\Converter\Converter\obj\Debug\Converter.pdb
