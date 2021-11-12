@@ -1,10 +1,5 @@
-﻿using ChoETL;
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Converter
 {
@@ -13,16 +8,16 @@ namespace Converter
 
         static void Main(string[] args)
         {
-          string JsonPath = "";
-          string CsvPath = ""; // if csv will be null , csvpath = jsonpath
-          string EncodingType = "";
-          string Separator = "";
+            string JsonPath = "";
+            string CsvPath = ""; // if csv will be null , csvpath = jsonpath
+            string EncodingType = "";
+            string Separator = "";
 
 
             for (int i = 0; i < args.Length; i++)
             {
-				try
-				{
+                try
+                {
                     Console.WriteLine(args[i]);
                     if (args[i] == "-i")
                         JsonPath = args[i + 1];
@@ -33,18 +28,35 @@ namespace Converter
                     else if (args[i] == "-s")
                         Separator = args[i + 1];
                 }
-                catch(Exception ex)
-				{
-					Console.WriteLine(ex.Message);
-				}
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
 
             string JsonText = WorkWithFiles.ReadFile(JsonPath);
-            JsonText = ChangeEncoding.SetEncoding(JsonText, EncodingType);
 
-            JsonText = TypeSeparator.ChangeSepType(JsonText, Separator);
+            if (!String.IsNullOrEmpty(JsonText))
+			{
+                if (!String.IsNullOrEmpty(EncodingType))
+                {
+                    JsonText = ChangeEncoding.SetEncoding(JsonText, EncodingType);
+                }
 
-            WorkWithFiles.WriteCSV(CsvPath, JsonText, JsonPath);
+                if (!String.IsNullOrEmpty(Separator))
+                {
+                    JsonText = TypeSeparator.ChangeSepType(JsonText, Separator);
+                }
+
+                WorkWithFiles.WriteCSV(CsvPath, JsonText, JsonPath);
+            }
+
+
+            if (args.Contains("-q"))
+			{
+                Console.WriteLine("The program is completed");
+                Console.ReadKey();
+            }
         }
     }
 }

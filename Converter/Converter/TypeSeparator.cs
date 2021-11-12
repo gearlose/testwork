@@ -1,17 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Converter
 {
+	/// <summary>
+	/// Класс для изменения разделителя в csv файле
+	/// </summary>
 	class TypeSeparator
 	{
-		public static string ChangeSepType(string JsonText , string Separator)
+		internal static string ChangeSepType(string JsonText, string Separator)
 		{
-			if (JsonText != null)
+			if(Separator[0] == '-')//проверка на то , что аргумент не принял следующий аргумент за текст
+			{
+				return JsonText;
+			}
+			try
 			{
 				StringBuilder sb = new StringBuilder();
 				foreach (char nextChar in JsonText)
@@ -25,8 +28,11 @@ namespace Converter
 
 				return sb.ToString();
 			}
-			else
-				return null;
+			catch(Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				return JsonText;
+			}
 		}
 	}
 }

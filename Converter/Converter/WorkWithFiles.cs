@@ -1,26 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Converter
 {
+	/// <summary>
+	/// Класс для работы с файлами
+	/// </summary>
 	class WorkWithFiles
 	{
-		public static string ReadFile(string path)
+		internal static string ReadFile(string path)
 		{
-			var sr = new StreamReader(path);
+			try
+			{
+				var sr = new StreamReader(path);
 
-			string json = sr.ReadToEnd();
+				string json = sr.ReadToEnd();
 
-			return json;
+				return json;
+			}
+			catch(Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				return null;
+			}
+
+
 		}
 
-		public static void WriteCSV(string pathtocsv, string jsontext, string pathtojson)
+		internal static void WriteCSV(string pathtocsv, string jsontext, string pathtojson)
 		{
-			if (pathtocsv != null)
+			if (!String.IsNullOrEmpty(pathtocsv))
 			{
 				File.WriteAllText(pathtocsv, jsontext);
 			}
