@@ -15,3 +15,20 @@ E:\тестоое задание\Converter\Converter\obj\Debug\Converter.csproj.
 E:\тестоое задание\Converter\Converter\obj\Debug\Converter.csproj.CopyComplete
 E:\тестоое задание\Converter\Converter\obj\Debug\Converter.exe
 E:\тестоое задание\Converter\Converter\obj\Debug\Converter.pdb
+E:\test\Converter\Converter\bin\Debug\Converter.exe.config
+E:\test\Converter\Converter\bin\Debug\Converter.exe
+E:\test\Converter\Converter\bin\Debug\Converter.pdb
+E:\test\Converter\Converter\bin\Debug\ChoETL.dll
+E:\test\Converter\Converter\bin\Debug\ChoETL.JSON.dll
+E:\test\Converter\Converter\bin\Debug\Newtonsoft.Json.dll
+E:\test\Converter\Converter\bin\Debug\System.CodeDom.dll
+E:\test\Converter\Converter\bin\Debug\System.ComponentModel.Annotations.dll
+E:\test\Converter\Converter\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\test\Converter\Converter\bin\Debug\System.Data.SqlClient.dll
+E:\test\Converter\Converter\bin\Debug\Newtonsoft.Json.pdb
+E:\test\Converter\Converter\bin\Debug\Newtonsoft.Json.xml
+E:\test\Converter\Converter\obj\Debug\Converter.csproj.AssemblyReference.cache
+E:\test\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+E:\test\Converter\Converter\obj\Debug\Converter.csproj.CopyComplete
+E:\test\Converter\Converter\obj\Debug\Converter.exe
+E:\test\Converter\Converter\obj\Debug\Converter.pdb
